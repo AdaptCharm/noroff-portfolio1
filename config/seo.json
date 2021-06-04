@@ -1,0 +1,17 @@
+{
+  "title": "Portfolio",
+  "titleTemplate": "%s | Jamie Isaksen",
+  "defaultTitle": "Portfolio",
+  "description": "The P1 Course Assignment.",
+  "openGraph": {
+    "type": "website",
+    "locale": "en",
+    "url": "https://noroff-portfolio.vercel.app",
+    "site_name": "Portfolio"
+  },
+  "twitter": {
+    "handle": "@portfolio",
+    "site": "@portfolio",
+    "cardType": "summary_large_image"
+  }
+}
