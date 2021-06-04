@@ -31,5 +31,27 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "next-unused": {
+    "alias": {
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ]
+    },
+    "debug": true,
+    "include": [
+      "components",
+      "pages"
+    ],
+    "exclude": [],
+    "entrypoints": [
+      "pages"
+    ]
   }
 }
