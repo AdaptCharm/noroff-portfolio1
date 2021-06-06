@@ -1,8 +1,10 @@
 import '@assets/main.css'
 import '@assets/chrome-bug.css'
+import '@assets/tippy.css'
 
 import { FC, useEffect } from 'react'
 import type { AppProps } from 'next/app'
+import { ThemeProvider } from 'next-themes'
 
 import { Head } from '@components/common'
 
@@ -18,9 +20,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head />
-      <Layout pageProps={pageProps}>
-        <Component {...pageProps} />
-      </Layout>
+      <ThemeProvider enableColorScheme={false} attribute="class">
+        <Layout pageProps={pageProps}>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
     </>
   )
 }
