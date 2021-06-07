@@ -26,10 +26,14 @@ const ThemeWidget: FC<Props> = ({ className }) => {
   })
 
   useEffect(() => {
-    const faviconElement = document.querySelector('#favicon')
-    const iconElement = document.querySelector('#icon')
-    const appleTouchElement = document.querySelector('#apple-touch')
-    const manifestElement = document.querySelector('#manifest')
+    const faviconElement = document.querySelector('#favicon') as HTMLLinkElement
+    const iconElement = document.querySelector('#icon') as HTMLLinkElement
+    const appleTouchElement = document.querySelector(
+      '#apple-touch'
+    ) as HTMLLinkElement
+    const manifestElement = document.querySelector(
+      '#manifest'
+    ) as HTMLLinkElement
 
     if (faviconElement && iconElement && appleTouchElement && manifestElement) {
       theme === 'light'
