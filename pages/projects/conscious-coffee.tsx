@@ -97,6 +97,61 @@ const ConsciousCoffee = () => {
                 The mobile menu closes upon navigation.
               </figcaption>
             </figure>
+            <h2 className="flex flex-col items-start text-black dark:text-white">
+              <Badge className="mb-3" variant="fix">
+                Fix
+              </Badge>
+              Width of images
+            </h2>
+            <p>
+              The width of the images on the{' '}
+              <code className="text-black dark:text-white">/locations</code>{' '}
+              page has been fixed. Now both of the images have an equal width.
+            </p>
+            <p>
+              I also updated the styling and added the{' '}
+              <code className="text-black dark:text-white">
+                object-fit: cover
+              </code>{' '}
+              and{' '}
+              <code className="text-black dark:text-white">
+                object-position: center
+              </code>{' '}
+              properties. Now the images are positioned correctly as well.
+            </p>
+            <p>
+              Lastly, I made sure that the images have rounded corners on mobile
+              devices. To be honest, I think the visual aspect is much better
+              with rounded corners than squared corners.
+            </p>
+            <div className="grid items-center grid-cols-1 lg:grid-cols-2 lg:gap-5">
+              <figure className="p-4 shadow-medium rounded-lg">
+                <Image
+                  className="w-full object-cover object-left rounded-lg"
+                  src="/conscious-coffee/before/locations-section.png"
+                  alt="Feature component"
+                  width={1310}
+                  height={873}
+                  layout="responsive"
+                />
+                <figcaption className="text-black dark:text-white">
+                  Before picture
+                </figcaption>
+              </figure>
+              <figure className="p-4">
+                <Image
+                  className="w-full object-cover object-left rounded-lg"
+                  src="/conscious-coffee/after/locations-section.png"
+                  alt="Feature component"
+                  width={1310}
+                  height={873}
+                  layout="responsive"
+                />
+                <figcaption className="text-black dark:text-white">
+                  After picture
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
