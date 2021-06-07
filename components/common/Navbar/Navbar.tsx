@@ -1,9 +1,4 @@
-import {
-  FC,
-  useRef,
-  useEffect,
-  Fragment
-} from 'react'
+import { FC, useRef, useEffect, Fragment } from 'react'
 
 import Mousetrap from 'mousetrap'
 
@@ -12,34 +7,38 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Tooltip } from 'react-tippy'
 import { ThemeWidget } from '@components/common'
-import { ConsciousCoffee, CommunityScienceMuseum, Explore } from '@components/icons'
+import {
+  ConsciousCoffee,
+  CommunityScienceMuseum,
+  Explore,
+} from '@components/icons'
 
 const shortcuts = [
   {
     name: 'Command center',
-    key: ['ctrl', 'k']
+    key: ['ctrl', 'k'],
   },
   {
     name: 'Switch theme',
-    key: ['ctrl', 't']
-  }
+    key: ['ctrl', 't'],
+  },
 ]
 
 const pages = [
   {
     name: 'Conscious Coffee',
-    href: '/conscious-coffee',
-    icon: <ConsciousCoffee className="w-6 h-6" />
+    href: '/projects/conscious-coffee',
+    icon: <ConsciousCoffee className="w-6 h-6" />,
   },
   {
     name: 'Community Science Museum',
-    href: '/community-science-museum',
-    icon: <CommunityScienceMuseum className="w-6 h-6" />
+    href: '/projects/community-science-museum',
+    icon: <CommunityScienceMuseum className="w-6 h-6" />,
   },
   {
     name: 'Explore',
-    href: '/explore',
-    icon: <Explore className="w-6 h-6" />
+    href: '/projects/explore',
+    icon: <Explore className="w-6 h-6" />,
   },
 ]
 
@@ -48,7 +47,10 @@ const Navbar: FC = () => {
   const showRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
-    Mousetrap.bind(['ctrl+k'], () => showRef.current?.click() ?? hideRef.current?.focus())
+    Mousetrap.bind(
+      ['ctrl+k'],
+      () => showRef.current?.click() ?? hideRef.current?.focus()
+    )
   }, [])
 
   return (
@@ -56,12 +58,16 @@ const Navbar: FC = () => {
       className="fixed inset-x-0 z-50"
       style={{
         backgroundColor: 'hsla(0, 0%, 100%, 0.9)',
-        backdropFilter: 'saturate(180%) blur(5px)'
+        backdropFilter: 'saturate(180%) blur(5px)',
       }}
     >
       {({ open }) => (
         <>
-          <div className="h-20 sm:h-30 bg-white dark:bg-black" ref={hideRef} tabIndex={-1}>
+          <div
+            className="h-20 sm:h-30 bg-white dark:bg-black"
+            ref={hideRef}
+            tabIndex={-1}
+          >
             <div className="grid grid-cols-navbar grid-flow-row grid-rows-none gap-5 h-full">
               <div className="col-start-2 col-end-auto flex items-center justify-between h-full">
                 <div className="flex items-center justify-start">
@@ -75,7 +81,9 @@ const Navbar: FC = () => {
                   >
                     <Link href="/">
                       <a className="ml-2">
-                        <span className="text-black dark:text-white">Portfolio</span>
+                        <span className="text-black dark:text-white">
+                          Portfolio
+                        </span>
                       </a>
                     </Link>
                   </Tooltip>
@@ -141,13 +149,13 @@ const Navbar: FC = () => {
                     <div className="pt-5 pb-6 px-5">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center">
-                          <span className="text-black dark:text-white">Portfolio</span>
+                          <span className="text-black dark:text-white">
+                            Portfolio
+                          </span>
                         </div>
                         <div className="flex items-center">
                           <div className="relative">
-                            <Popover.Button
-                              className="flex items-center justify-center bg-transparent rounded-md w-10 h-10 border-none transition ease-default duration-400 text-black dark:text-white hover:opacity-60 hover:p-2 hover:shadow-small focus:outline-none"
-                            >
+                            <Popover.Button className="flex items-center justify-center bg-transparent rounded-md w-10 h-10 border-none transition ease-default duration-400 text-black dark:text-white hover:opacity-60 hover:p-2 hover:shadow-small focus:outline-none">
                               <span className="sr-only">Close menu</span>
                               <XIcon className="w-6 h-6" aria-hidden="true" />
                             </Popover.Button>

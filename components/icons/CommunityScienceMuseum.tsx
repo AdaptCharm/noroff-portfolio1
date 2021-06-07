@@ -2,7 +2,8 @@ import { useRouter } from 'next/router'
 
 const CommunityScienceMuseum = ({ ...props }) => {
   const { pathname } = useRouter()
-  const switchSvgColor = pathname === '/' ? 'hsl(0, 0%, 100%)' : 'hsl(348, 7%, 14%)'
+  const switchSvgColor =
+    pathname === '/' ? 'hsl(0, 0%, 100%)' : 'hsl(348, 7%, 14%)'
 
   return (
     <svg
@@ -13,19 +14,82 @@ const CommunityScienceMuseum = ({ ...props }) => {
       shapeRendering="geometricPrecision"
       {...props}
     >
-      <rect fill="currentColor" x="79.14" y="98.11" width="4.71" height="9.43" rx="2.36" />
-      <rect fill="currentColor" x="79.14" y="41.54" width="4.71" height="9.43" rx="2.36" />
-      <rect fill="currentColor" x="48.5" y="72.18" width="9.43" height="4.71" rx="2.36" />
-      <rect fill="currentColor" x="105.07" y="72.18" width="9.43" height="4.71" rx="2.36" />
-      <rect fill="currentColor" x="99.13" y="89.82" width="4.71" height="9.43" rx="2.36" transform="translate(-37.12 99.45) rotate(-45)" />
-      <rect fill="currentColor" x="59.13" y="49.82" width="4.71" height="9.43" rx="2.36" transform="translate(-20.56 59.45) rotate(-45)" />
-      <rect fill="currentColor" x="56.78" y="92.18" width="9.43" height="4.71" rx="2.36" transform="translate(-48.84 71.18) rotate(-45)" />
-      <rect fill="currentColor" x="96.78" y="52.18" width="9.43" height="4.71" rx="2.36" transform="translate(-8.84 87.74) rotate(-45)" />
+      <rect
+        fill="currentColor"
+        x="79.14"
+        y="98.11"
+        width="4.71"
+        height="9.43"
+        rx="2.36"
+      />
+      <rect
+        fill="currentColor"
+        x="79.14"
+        y="41.54"
+        width="4.71"
+        height="9.43"
+        rx="2.36"
+      />
+      <rect
+        fill="currentColor"
+        x="48.5"
+        y="72.18"
+        width="9.43"
+        height="4.71"
+        rx="2.36"
+      />
+      <rect
+        fill="currentColor"
+        x="105.07"
+        y="72.18"
+        width="9.43"
+        height="4.71"
+        rx="2.36"
+      />
+      <rect
+        fill="currentColor"
+        x="99.13"
+        y="89.82"
+        width="4.71"
+        height="9.43"
+        rx="2.36"
+        transform="translate(-37.12 99.45) rotate(-45)"
+      />
+      <rect
+        fill="currentColor"
+        x="59.13"
+        y="49.82"
+        width="4.71"
+        height="9.43"
+        rx="2.36"
+        transform="translate(-20.56 59.45) rotate(-45)"
+      />
+      <rect
+        fill="currentColor"
+        x="56.78"
+        y="92.18"
+        width="9.43"
+        height="4.71"
+        rx="2.36"
+        transform="translate(-48.84 71.18) rotate(-45)"
+      />
+      <rect
+        fill="currentColor"
+        x="96.78"
+        y="52.18"
+        width="9.43"
+        height="4.71"
+        rx="2.36"
+        transform="translate(-8.84 87.74) rotate(-45)"
+      />
       <path d="M109.46,147.58c-7.95,0-16.93-3-26.33-8.83C68.46,129.59,54.38,114.41,43.51,96S26.22,58.06,25.45,41.05C24.66,23.55,30,10.68,40.33,4.81S64.75.91,79.86,10.33c14.68,9.16,28.75,24.34,39.63,42.76S136.78,91,137.54,108c.79,17.5-4.49,30.37-14.88,36.23A26.44,26.44,0,0,1,109.46,147.58ZM53.56,5.79a22.21,22.21,0,0,0-11,2.74c-8.89,5-13.4,16.51-12.68,32.33.73,16.33,6.94,35.15,17.47,53s24.09,32.5,38.18,41.29c13.66,8.51,26.08,10.44,35,5.42s13.4-16.51,12.69-32.33c-.74-16.33-7-35.15-17.48-53S91.59,22.74,77.5,14C68.83,8.54,60.65,5.79,53.56,5.79Z" />
       <path d="M81.5,119.5c-21.13,0-41-4.53-56-12.76C10,98.26,1.5,86.83,1.5,74.54s8.51-23.72,24-32.2c15-8.23,34.91-12.76,56-12.76s41,4.53,56,12.76c15.45,8.48,24,19.91,24,32.2s-8.51,23.72-24,32.2C122.54,115,102.63,119.5,81.5,119.5Zm0-85.42c-41.76,0-75.73,18.15-75.73,40.46S39.74,115,81.5,115s75.73-18.15,75.73-40.46-34-40.46-75.73-40.46Z" />
       <path d="M53.54,147.58a26.44,26.44,0,0,1-13.2-3.32C30,138.4,24.67,125.53,25.46,108c.76-17,7.18-36.52,18-54.94s24.95-33.6,39.63-42.76C98.24.91,112.29-1,122.67,4.82s15.67,18.73,14.88,36.23c-.77,17-7.18,36.52-18.06,54.94s-24.94,33.6-39.62,42.76c-9.4,5.86-18.38,8.83-26.33,8.83ZM109.44,5.79c-7.09,0-15.27,2.75-23.94,8.16C71.4,22.74,57.85,37.4,47.32,55.24s-16.74,36.65-17.48,53c-.71,15.82,3.79,27.3,12.69,32.33s21.32,3.09,35-5.42c14.09-8.79,27.65-23.45,38.18-41.29s16.74-36.65,17.47-53c.72-15.82-3.79-27.31-12.69-32.33a22.15,22.15,0,0,0-11-2.74Z" />
       <circle fill="transparent" cx="81.5" cy="74.54" r="15" />
-      <path fill="currentColor" d="M81.5,91.54a17,17,0,1,1,17-17A17,17,0,0,1,81.5,91.54Zm0-30a13,13,0,1,0,13,13A13,13,0,0,0,81.5,61.54Z" />
+      <path
+        fill="currentColor"
+        d="M81.5,91.54a17,17,0,1,1,17-17A17,17,0,0,1,81.5,91.54Zm0-30a13,13,0,1,0,13,13A13,13,0,0,0,81.5,61.54Z"
+      />
     </svg>
   )
 }

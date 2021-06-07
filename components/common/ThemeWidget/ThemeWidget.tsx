@@ -1,8 +1,4 @@
-import {
-  FC,
-  useState,
-  useEffect
-} from 'react'
+import { FC, useState, useEffect } from 'react'
 import cn from 'classnames'
 
 import { useTheme } from 'next-themes'
@@ -15,14 +11,14 @@ interface Props {
   className?: string
 }
 
-const ThemeWidget: FC<Props> = ({
-  className
-}) => {
+const ThemeWidget: FC<Props> = ({ className }) => {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    Mousetrap.bind(['ctrl+t'], () => setTheme(theme === 'light' ? 'dark' : 'light'))
+    Mousetrap.bind(['ctrl+t'], () =>
+      setTheme(theme === 'light' ? 'dark' : 'light')
+    )
 
     return () => {
       Mousetrap.unbind(['ctrl+t'])
@@ -48,8 +44,12 @@ const ThemeWidget: FC<Props> = ({
             'flex items-center justify-center bg-transparent rounded-md w-10 h-10 border-none transition ease-default duration-400 text-gray-700 hover:p-2 hover:shadow-small focus:outline-none focus:ring-transparent',
             className
           )}
-          onClick={() => { setTheme(theme === 'light' ? 'dark' : 'light') }}
-          aria-label={theme === 'light' ? 'Activate dark mode' : 'Activate light mode'}
+          onClick={() => {
+            setTheme(theme === 'light' ? 'dark' : 'light')
+          }}
+          aria-label={
+            theme === 'light' ? 'Activate dark mode' : 'Activate light mode'
+          }
         >
           {theme === 'light' ? (
             <MoonIcon className="w-6 h-6" />
