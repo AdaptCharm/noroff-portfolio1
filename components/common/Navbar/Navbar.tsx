@@ -55,9 +55,11 @@ const Navbar: FC = () => {
 
   return (
     <Popover
-      className="bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-80 fixed inset-x-0 z-50"
+      className="bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-80 transition ease-default fixed inset-x-0 z-50"
       style={{
         backdropFilter: 'saturate(180%) blur(5px)',
+        transitionDuration: '500ms',
+        transitionProperty: 'background-color',
       }}
     >
       {({ open }) => (
