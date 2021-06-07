@@ -1,6 +1,6 @@
 {
-  "title": "Portfolio",
-  "titleTemplate": "%s | Jamie Isaksen",
+  "title": "Home",
+  "titleTemplate": "%s | Portfolio",
   "defaultTitle": "Portfolio",
   "description": "The P1 Course Assignment.",
   "openGraph": {

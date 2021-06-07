@@ -25,6 +25,25 @@ const ThemeWidget: FC<Props> = ({ className }) => {
     }
   })
 
+  useEffect(() => {
+    const faviconElement = document.querySelector('#favicon')
+    const iconElement = document.querySelector('#icon')
+    const appleTouchElement = document.querySelector('#apple-touch')
+    const manifestElement = document.querySelector('#manifest')
+
+    if (faviconElement) {
+      theme === 'light'
+        ? ((faviconElement.href = '/favicon/light/favicon.ico'),
+          (iconElement.href = '/favicon/light/icon.svg'),
+          (appleTouchElement.href = '/favicon/light/apple-touch-icon.png'),
+          (manifestElement.href = '/favicon/light/manifest.webmanifest'))
+        : ((faviconElement.href = '/favicon/dark/favicon.ico'),
+          (iconElement.href = '/favicon/dark/icon.svg'),
+          (appleTouchElement.href = '/favicon/dark/apple-touch-icon.png'),
+          (manifestElement.href = '/favicon/dark/manifest.webmanifest'))
+    }
+  })
+
   useEffect(() => setMounted(true), [])
 
   if (!mounted) return null
