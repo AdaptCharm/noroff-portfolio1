@@ -55,19 +55,14 @@ const Navbar: FC = () => {
 
   return (
     <Popover
-      className="fixed inset-x-0 z-50"
+      className="bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-80 fixed inset-x-0 z-50"
       style={{
-        backgroundColor: 'hsla(0, 0%, 100%, 0.9)',
         backdropFilter: 'saturate(180%) blur(5px)',
       }}
     >
       {({ open }) => (
         <>
-          <div
-            className="h-20 sm:h-30 bg-white dark:bg-black"
-            ref={hideRef}
-            tabIndex={-1}
-          >
+          <div className="h-20 sm:h-30" ref={hideRef} tabIndex={-1}>
             <div className="grid grid-cols-navbar grid-flow-row grid-rows-none gap-5 h-full">
               <div className="col-start-2 col-end-auto flex items-center justify-between h-full">
                 <div className="flex items-center justify-start">

@@ -122,7 +122,7 @@ const ConsciousCoffee = () => {
             <p>
               Lastly, I made sure that the images have rounded corners on mobile
               devices. To be honest, I think the visual aspect is much better
-              with rounded corners than squared corners.
+              with rounded corners than with squared corners.
             </p>
             <div className="grid items-center grid-cols-1 lg:grid-cols-2 lg:gap-5">
               <figure className="p-4 shadow-medium rounded-lg">

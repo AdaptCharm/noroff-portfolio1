@@ -5,10 +5,7 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: {
-    content: [
-      './pages/**/*.{ts,tsx}',
-      './components/**/*.{ts,tsx}',
-    ],
+    content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   },
   darkMode: 'class',
   theme: {
@@ -32,37 +29,34 @@ module.exports = {
         secondary: 'var(--text-secondary)',
       },
       spacing: {
-        '30': '7.5rem',
-        '150': '37.5rem'
+        30: '7.5rem',
+        150: '37.5rem',
       },
       inset: {
-        '1/5': '20%'
+        '1/5': '20%',
       },
       transitionTimingFunction: {
-        'default': 'ease'
+        default: 'ease',
       },
       transitionDuration: {
-        '250': '250ms',
-        '400': '400ms'
+        250: '250ms',
+        400: '400ms',
       },
       boxShadow: {
-        'header': 'var(--shadow-header)',
-        'minimalistic': 'var(--shadow-minimalistic)',
-        'smallest': 'var(--shadow-smallest)',
-        'small': 'var(--shadow-small)',
-        'medium': 'var(--shadow-medium)',
-        'large': 'var(--shadow-large)',
-        '1': 'var(--shadow-1)'
+        minimalistic: 'var(--shadow-minimalistic)',
+        smallest: 'var(--shadow-smallest)',
+        small: 'var(--shadow-small)',
+        medium: 'var(--shadow-medium)',
+        large: 'var(--shadow-large)',
+        1: 'var(--shadow-1)',
       },
       gridTemplateColumns: {
-        'navbar': '1fr minmax(auto, 880px) 1fr',
+        navbar: '1fr minmax(auto, 880px) 1fr',
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/typography')
-  ],
+  plugins: [require('@tailwindcss/typography')],
 }
