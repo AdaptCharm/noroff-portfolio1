@@ -31,7 +31,7 @@ const ThemeWidget: FC<Props> = ({ className }) => {
     const appleTouchElement = document.querySelector('#apple-touch')
     const manifestElement = document.querySelector('#manifest')
 
-    if (faviconElement) {
+    if (faviconElement && iconElement && appleTouchElement && manifestElement) {
       theme === 'light'
         ? ((faviconElement.href = '/favicon/light/favicon.ico'),
           (iconElement.href = '/favicon/light/icon.svg'),
