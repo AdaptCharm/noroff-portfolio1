@@ -7,12 +7,12 @@ import { Badge } from '@components/ui'
 
 import Image from 'next/image'
 
-const CommunityScienceMuseum = () => {
+const ConsciousCoffee = () => {
   return (
     <>
       <NextSeo
-        title="Community Science Museum"
-        description="The Community Science Museum project for the Semester Project."
+        title="Conscious Coffee"
+        description="The Conscious Coffee project for the HTML &amp; CSS CA."
       />
       <div className="relative py-16 lg:py-24 bg-white dark:bg-black overflow-hidden">
         <div className="relative py-6 px-4 sm:px-6 lg:px-8">
@@ -20,7 +20,7 @@ const CommunityScienceMuseum = () => {
             <div className="flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between items-center">
               <h1>
                 <span className="block text-6xl sm:text-7xl text-center font-extrabold tracking-tight text-black dark:text-white">
-                  Community Science Museum
+                  Conscious Coffee
                 </span>
               </h1>
               <div className="mt-4 flex items-center gap-x-10">
@@ -28,7 +28,7 @@ const CommunityScienceMuseum = () => {
                   <GlobeIcon className="w-6 h-6 text-black dark:text-white" />
                   <a
                     className="text-gray-900 hover:text-opacity-60 dark:text-gray-100 dark:hover:text-opacity-60 focus:outline-none focus:ring-transparent"
-                    href="https://portfolio-community-science-museum.vercel.app"
+                    href="https://portfolio-conscious-coffee.vercel.app"
                     target="_blank"
                     rel="noopener"
                   >
@@ -39,7 +39,7 @@ const CommunityScienceMuseum = () => {
                   <GitHub className="w-6 h-6 text-black dark:text-white" />
                   <a
                     className="text-gray-900 hover:text-opacity-60 dark:text-gray-100 dark:hover:text-opacity-60 focus:outline-none focus:ring-transparent"
-                    href="https://github.com/AdaptCharm/portfolio-community-science-museum"
+                    href="https://github.com/AdaptCharm/portfolio-conscious-coffee"
                     target="_blank"
                     rel="noopener"
                   >
@@ -64,7 +64,7 @@ const CommunityScienceMuseum = () => {
             <figure>
               <Image
                 className="w-full object-cover object-left rounded-lg"
-                src="/community-science-museum/packages-version-bump.png"
+                src="/conscious-coffee/packages-version-bump.png"
                 alt="Packages version bump"
                 width={1310}
                 height={873}
@@ -75,73 +75,28 @@ const CommunityScienceMuseum = () => {
               </figcaption>
             </figure>
             <h2 className="flex flex-col items-start text-black dark:text-white">
-              <Badge className="mb-3" variant="improvement">
-                Improvement
+              <Badge className="mb-3" variant="fix">
+                Fix
               </Badge>
-              Image optimization
+              Mobile menu not closing upon navigation
             </h2>
             <p>
-              Optimized all the images on the entire site. This was achieved by
-              using multiple optimization algorithms. In addition to that, I
-              also used the{' '}
-              <a
-                className="text-gray-900 hover:text-opacity-60 dark:text-gray-100 dark:hover:text-opacity-60 focus:outline-none focus:ring-transparent"
-                href="https://kraken.io/"
-                target="_blank"
-                rel="noopener"
-              >
-                Kraken
-              </a>{' '}
-              platform, combined with the{' '}
-              <a
-                className="text-gray-900 hover:text-opacity-60 dark:text-gray-100 dark:hover:text-opacity-60 focus:outline-none focus:ring-transparent"
-                href="https://tinypng.com/"
-                target="_blank"
-                rel="noopener"
-              >
-                TinyPNG
-              </a>{' '}
-              platform.
-            </p>
-            <p>
-              The total file size is now reduced by{' '}
-              <strong className="text-black dark:text-white">9.11</strong> MB.
+              On my HTML &amp; CSS CA, I received feedback that the mobile menu
+              was not closing whenever a user moved to a different page. This
+              issue has been fixed and the mobile menu is now closing as
+              expected.
             </p>
             <figure>
-              <Image
-                className="w-full object-cover object-left rounded-lg"
-                src="/community-science-museum/images-optimized.png"
-                alt="Images optimized"
-                width={1310}
-                height={873}
-                layout="responsive"
-              />
+              <video width={1310} height={873} controls>
+                <source
+                  src="/conscious-coffee/mobile-menu-functionality.mov"
+                  type="video/mp4"
+                />
+              </video>
               <figcaption className="text-black dark:text-white">
-                All packages are now using the latest version.
+                The mobile menu closes upon navigation.
               </figcaption>
             </figure>
-            <p>
-              Judging by the metrics from Lighthouse, it seems the page load got
-              decreased by{' '}
-              <strong className="text-black dark:text-white">0.1</strong> ms.
-            </p>
-            <figure>
-              <Image
-                className="w-full object-cover object-center rounded-lg"
-                src="/community-science-museum/lighthouse.png"
-                alt="Images optimized"
-                width={1310}
-                height={873}
-                layout="responsive"
-              />
-              <figcaption className="text-black dark:text-white">
-                As seen above, the performance is magnificent.
-              </figcaption>
-            </figure>
-            <p>
-              I think it's safe to conclude that the performance is even way
-              better than what it initially used to be.
-            </p>
           </div>
         </div>
       </div>
@@ -149,6 +104,6 @@ const CommunityScienceMuseum = () => {
   )
 }
 
-export default CommunityScienceMuseum
+export default ConsciousCoffee
 
-CommunityScienceMuseum.Layout = Layout
+ConsciousCoffee.Layout = Layout
