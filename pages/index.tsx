@@ -40,12 +40,13 @@ const Home = () => {
                   <a className="flex flex-col shadow-lg overflow-hidden rounded-md transition ease-default duration-200 hover:shadow-medium">
                     <div className="flex-shrink-0 transition ease-default duration-200 hover:opacity-60">
                       <Image
-                        className="h-64 object-cover object-center"
+                        className="object-cover object-center"
                         src={project.imageUrl}
                         alt={project.title}
                         width={277.33}
                         height={191.36}
                         layout="responsive"
+                        priority={true}
                       />
                     </div>
                   </a>
