@@ -43,8 +43,8 @@ const Home = () => {
                         className="h-64 object-cover object-center"
                         src={project.imageUrl}
                         alt={project.title}
-                        width={371}
-                        height={256}
+                        width={277.33}
+                        height={191.36}
                         layout="responsive"
                       />
                     </div>
