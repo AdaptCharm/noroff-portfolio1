@@ -63,12 +63,13 @@ const ConsciousCoffee = () => {
             </p>
             <figure>
               <Image
-                className="w-full object-cover object-left rounded-lg"
+                className="object-cover object-left rounded-lg"
                 src="/conscious-coffee/packages-version-bump.png"
                 alt="Packages version bump"
                 width={1310}
                 height={873}
                 layout="responsive"
+                priority={true}
               />
               <figcaption className="text-black dark:text-white">
                 All packages are now using the latest version.
@@ -127,7 +128,7 @@ const ConsciousCoffee = () => {
             <div className="grid items-center grid-cols-1 lg:grid-cols-2 lg:gap-5">
               <figure className="p-4 shadow-medium rounded-lg">
                 <Image
-                  className="w-full object-cover object-left rounded-lg"
+                  className="object-cover object-left rounded-lg"
                   src="/conscious-coffee/before/locations-section.png"
                   alt="Feature component"
                   width={1310}
@@ -140,7 +141,7 @@ const ConsciousCoffee = () => {
               </figure>
               <figure className="p-4">
                 <Image
-                  className="w-full object-cover object-left rounded-lg"
+                  className="object-cover object-left rounded-lg"
                   src="/conscious-coffee/after/locations-section.png"
                   alt="Feature component"
                   width={1310}

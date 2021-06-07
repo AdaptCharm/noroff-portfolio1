@@ -63,12 +63,13 @@ const Explore = () => {
             </p>
             <figure>
               <Image
-                className="w-full object-cover object-left rounded-lg"
+                className="object-cover object-left rounded-lg"
                 src="/explore/github/iris_001.png"
                 alt="Feature component"
                 width={1310}
                 height={873}
                 layout="responsive"
+                priority={true}
               />
               <figcaption className="text-black dark:text-white">
                 Clearly, interpolation does not work the same way as it does
@@ -86,7 +87,7 @@ const Explore = () => {
             <div className="grid items-center grid-cols-1 lg:grid-cols-2 lg:gap-5">
               <figure className="p-4 shadow-medium rounded-lg">
                 <Image
-                  className="w-full object-cover object-left rounded-lg"
+                  className="object-cover object-left rounded-lg"
                   src="/explore/before/exotic-travel-destinations.png"
                   alt="Feature component"
                   width={1310}
@@ -99,7 +100,7 @@ const Explore = () => {
               </figure>
               <figure className="p-4">
                 <Image
-                  className="w-full object-cover object-left rounded-lg"
+                  className="object-cover object-left rounded-lg"
                   src="/explore/after/exotic-travel-destinations.png"
                   alt="Feature component"
                   width={1310}
@@ -114,7 +115,7 @@ const Explore = () => {
             <div className="grid items-center grid-cols-1 lg:grid-cols-2 lg:gap-5">
               <figure className="p-4">
                 <Image
-                  className="w-full object-cover object-left rounded-lg"
+                  className="object-cover object-left rounded-lg"
                   src="/explore/before/white-sand-beaches.png"
                   alt="White sand beaches"
                   width={1310}
@@ -127,7 +128,7 @@ const Explore = () => {
               </figure>
               <figure className="p-4 shadow-medium rounded-lg">
                 <Image
-                  className="w-full object-cover object-left rounded-lg"
+                  className="object-cover object-left rounded-lg"
                   src="/explore/after/white-sand-beaches.png"
                   alt="White sand beaches"
                   width={1310}
@@ -153,7 +154,7 @@ const Explore = () => {
               globally accessible by any future API integrations.
             </p>
             <Image
-              className="w-full object-cover object-left rounded-lg"
+              className="object-cover object-left rounded-lg"
               src="/explore/github/iris_002.png"
               alt="Constants configuration file"
               width={1310}
@@ -187,7 +188,7 @@ const Explore = () => {
             </p>
             <figure>
               <Image
-                className="w-full object-cover object-right rounded-lg"
+                className="object-cover object-right rounded-lg"
                 src="/explore/newsletter-form-functionality.png"
                 alt="Newsletter functionality"
                 width={1310}

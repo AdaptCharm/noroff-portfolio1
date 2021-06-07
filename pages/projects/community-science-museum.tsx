@@ -63,12 +63,13 @@ const CommunityScienceMuseum = () => {
             </p>
             <figure>
               <Image
-                className="w-full object-cover object-left rounded-lg"
+                className="object-cover object-left rounded-lg"
                 src="/community-science-museum/packages-version-bump.png"
                 alt="Packages version bump"
                 width={1310}
                 height={873}
                 layout="responsive"
+                priority={true}
               />
               <figcaption className="text-black dark:text-white">
                 All packages are now using the latest version.
@@ -109,7 +110,7 @@ const CommunityScienceMuseum = () => {
             </p>
             <figure>
               <Image
-                className="w-full object-cover object-left rounded-lg"
+                className="object-cover object-left rounded-lg"
                 src="/community-science-museum/images-optimized.png"
                 alt="Images optimized"
                 width={1310}
@@ -127,7 +128,7 @@ const CommunityScienceMuseum = () => {
             </p>
             <figure>
               <Image
-                className="w-full object-cover object-center rounded-lg"
+                className="object-cover object-center rounded-lg"
                 src="/community-science-museum/lighthouse.png"
                 alt="Images optimized"
                 width={1310}
